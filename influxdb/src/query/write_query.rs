@@ -50,6 +50,10 @@ impl WriteQuery {
         }
     }
 
+    pub fn set_timestamp(&mut self, timestamp: Timestamp) {
+        self.timestamp = timestamp;
+    }
+
     /// Adds a field to the [`WriteQuery`](crate::WriteQuery)
     ///
     /// # Examples
